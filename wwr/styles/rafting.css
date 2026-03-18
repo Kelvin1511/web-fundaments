@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #004e92;
+  --secondary-color: #f5af19;
+  --accent1-color: #333333;
+  --accent2-color: #ffffff;
+  --heading-font: "Georgia", serif;
+  --body-font: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Header & Navigation --- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+header img {
+  width: 150px; /* Controlled logo size */
+  height: auto;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(0, 78, 146, 0.7); /* Professional transparent blue */
+  color: white;
+  font-family: var(--heading-font);
+}
+
+.hero article {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: -50px; /* Overlap effect */
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero article img {
+  float: right;
+  width: 150px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+/* --- Content Sections --- */
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+  display: inline-block;
+}
+
+section {
+  margin: 40px 0;
+}
+
+/* --- Footer & Social Media --- */
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.socialmedia img {
+  width: 40px; /* Small, elegant icons */
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
+}
