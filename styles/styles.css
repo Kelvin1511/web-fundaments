@@ -1,82 +1,56 @@
-/* Universal Selector - Resets margins and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Combined rule for header, .grid, and footer to center content */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px;
-  background-color: #f9f9f9;
+/* Header styles */
+h1 {
+    border-bottom: 2px solid steelblue; /* Bottom border as requested */
+    text-align: center;
+    padding: 1rem;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
+/* Navigation using CSS Flex */
 nav {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* White color */
 }
 
-/* Floating profile image to the right */
-main img {
-  float: right;
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
-  margin: 0 0 20px 20px;
+/* Grid layout for the body */
+.grid {
+    display: grid;
+    align-items: center;
 }
 
-/* Positioning for the Aside element */
 aside {
-  position: relative; /* Container for absolute positioning */
-  width: 300px;
-  clear: both; /* Ensures it doesn't overlap the floating image weirdly */
+    width: 20rem;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 1rem;
+    background-color: #f9f9f9;
 }
 
-aside h2 {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-aside img {
-    width: 100%;
-    float: none; /* Resets float specifically for the aside image */
-    margin: 0;
-}
-
-/* Class Selectors Section */
-/* Class Selectors */
-.box {
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
-  background-color: #eeeeee;
-  color: #000;
-  list-style: none; /* Removes bullets from the temple list */
-}
-
-.box li {
-    margin-bottom: 10px;
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
 }
 
 footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 0.9em;
-  color: #666;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
