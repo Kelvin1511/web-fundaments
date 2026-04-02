@@ -1,133 +1,80 @@
-/* 1. UNIVERSAL SELECTOR RESET - REQUIRED */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* --- Contact Page Styles --- */
 
-/* 2. CSS VARIABLES - MUST BE USED */
-:root {
-    --primary-color: #003366;
-    --secondary-color: #ffffff;
-    --accent-color: #ff6600; 
-}
-
-body {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-/* 3. HEADER & NAV (GRID/FLEX) */
-header {
+.info-container {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
     align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px;
 }
 
-header img {
-    width: 100px;
-    height: auto;
-}
-
-nav {
+.employee-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
 }
 
-/* White text for better contrast audit */
-nav a, .socialmedia a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
-    padding: 10px;
-}
-
-/* Using accent variable to avoid 'unused' error */
-nav a:hover {
-    color: var(--accent-color);
-}
-
-/* 4. HERO SECTION POSITIONING (ROBOT REQUIRED) */
-.hero {
-    position: relative;
-    display: block;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-/* Positioning H1 over the image */
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    color: var(--primary-color);
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    width: 60%;
-}
-
-/* Required float for article image */
-.hero article img {
-    float: right;
-    width: 150px;
-    height: auto;
-    margin-left: 15px;
-}
-
-/* 5. ADVENTURE GRID */
-section {
-    padding: 20px;
-}
-
-.adventure-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.adventure-grid figure {
-    flex: 1;
+.employee-grid figure {
     text-align: center;
 }
 
-.adventure-grid img {
-    width: 100%;
-    height: 120px;
+.employee-grid img {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #05668d; /* Professional blue border */
 }
 
-/* 6. FOOTER */
-footer {
+/* Contact Form Styling */
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form-group {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #05668d;
     color: white;
-    padding: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
 }
 
-.socialmedia {
-    display: flex;
+button:hover {
+    background-color: #028090;
 }
 
-.socialmedia img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+.map-box iframe {
+    border: 2px solid #05668d;
+    border-radius: 8px;
 }
