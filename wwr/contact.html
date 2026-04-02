@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Dry Water Rafting - Rich Kevin Panozo</title>
-    <meta name="description" content="Contact Dry Water Rafting for the best river adventures in Bolivia and beyond. Reach out to Rich Kevin Panozo's team.">
+    <meta name="author" content="Rich Kevin Panozo Vargas">
+    <meta name="description" content="Contact Dry Water Rafting for river adventures. Located in Cochabamba, Bolivia.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -13,73 +14,62 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <section class="contact-info">
-            <h1>Contact Us</h1>
-            <div class="contact-grid">
-                <div class="details">
-                    <p><strong>Address:</strong> Av. Heroínas, Cochabamba, Bolivia</p>
-                    <p><strong>Phone:</strong> +591 70000000</p>
-                    <p><strong>Email:</strong> info@drywaterrafting.com</p>
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15226.714441584282!2d-66.1568!3d-17.3895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373f96e47c16d%3A0x6338b97d195f2d49!2sCochabamba!5e0!3m2!1sen!2sbo!4v1712100000000" width="100%" height="300" loading="lazy"></iframe>
-                </div>
+        <h1>Contact Dry Water Rafting</h1>
+        
+        <section class="contact-grid">
+            <p>Address: Av. Heroínas, Cochabamba, Bolivia</p>
+            <p>Phone: +591 70000000</p>
+            <p>Email: info@drywaterrafting.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300"></iframe>
             </div>
         </section>
 
-        <section class="team-section">
+        <section class="employee-profiles">
             <h2>Our Expert Team</h2>
             <div class="employee-grid">
                 <figure>
                     <img src="images/profile.jpg" alt="Rich Kevin Panozo">
-                    <figcaption><strong>Rich Kevin Panozo Vargas</strong> - Founder & CEO</figcaption>
+                    <figcaption>Rich Kevin Panozo Vargas - Founder</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/client.jpg" alt="Guide 1">
-                    <figcaption><strong>Sarah Johnson</strong> - Lead Guide</figcaption>
+                    <img src="images/client.jpg" alt="Sarah Johnson">
+                    <figcaption>Sarah Johnson - Guide 1</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/hero.jpg" alt="Guide 2">
-                    <figcaption><strong>Marco Polo</strong> - Safety Specialist</figcaption>
+                    <img src="images/hero.jpg" alt="Marco Polo">
+                    <figcaption>Marco Polo - Guide 2</figcaption>
                 </figure>
             </div>
         </section>
 
         <section class="form-section">
-            <h2>Send a Message</h2>
             <form action="#" method="post">
-                <div class="form-item">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" required>
-                </div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
 
-                <div class="form-item">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="user_email" required>
-                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required>
 
                 <fieldset>
                     <legend>Purpose of Message</legend>
-                    <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label><input type="radio" id="general" name="purpose" value="general"> General Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
                 </fieldset>
 
-                <div class="form-item">
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message" rows="4"></textarea>
-                </div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
 
-                <div class="form-item">
-                    <label>
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                    </label>
-                </div>
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
 
                 <button type="submit">Submit Adventure Request</button>
             </form>
@@ -88,6 +78,11 @@
 
     <footer>
         <p>© 2026 Rafting Project | Rich Kevin Panozo Vargas | Cochabamba, Bolivia</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </nav>
     </footer>
 </body>
 </html>
