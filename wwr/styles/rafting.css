@@ -1,80 +1,88 @@
-/* --- Contact Page Styles --- */
+/* --- CONTACT PAGE FINAL STYLES --- */
 
-.info-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin: 20px 0;
-    align-items: center;
-}
-
+/* Employee Grid Layout */
 .employee-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px 0;
-}
-
-.employee-grid figure {
-    text-align: center;
+    margin: 20px 0;
 }
 
 .employee-grid img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #05668d; /* Professional blue border */
+    border: 3px solid #05668d;
 }
 
-/* Contact Form Styling */
-.contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 8px;
-}
-
-.form-group {
+/* FOOTER AND SOCIAL MEDIA ICONS (SMALL ICONS) */
+footer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
 }
 
-.form-group label {
-    font-weight: bold;
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socialmedia img {
+    width: 35px; /* SMALL ICONS FIXED HERE */
+    height: auto;
+    transition: 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+/* CONTACT FORM STYLING */
+form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-item label {
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 fieldset {
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
     padding: 15px;
-    margin-bottom: 20px;
-}
-
-fieldset label {
-    display: block;
-    margin-bottom: 8px;
+    border: 1px solid #05668d;
 }
 
 button {
     background-color: #05668d;
     color: white;
-    padding: 15px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
     cursor: pointer;
     width: 100%;
+    font-size: 1.1em;
 }
 
 button:hover {
     background-color: #028090;
-}
-
-.map-box iframe {
-    border: 2px solid #05668d;
-    border-radius: 8px;
 }
