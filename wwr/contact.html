@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Whitewater Rafting</title>
+    <meta name="description" content="Contact Whitewater Rafting for the best river adventures in Bolivia. Reach out for reservations or questions.">
+    <meta name="author" content="Rich Kevin Panozo Vargas">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <img src="images/logo.png" alt="Rafting Logo">
         <nav>
-            <a href="../index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
@@ -18,42 +20,60 @@
     </header>
 
     <main>
-        <div class="contact-container">
-            <section class="contact-info">
-                <h1>Visit Our Office</h1>
-                <p><strong>Address:</strong> Av. Heroínas, Cochabamba, Bolivia</p>
-                <p><strong>Email:</strong> contact@raftingadventure.com</p>
-                <p><strong>Phone:</strong> +591 123 45678</p>
-                <div class="map-container">
-                    <img src="images/map.png" alt="Our Location">
+        <h1>Visit Our Office</h1>
+        <div class="contact-layout">
+            <section class="business-info">
+                <h2>Our Location</h2>
+                <p>Address: Av. Heroínas, Cochabamba, Bolivia</p>
+                <p>Email: info@raftingadventure.com</p>
+                <p>Phone: +591 4 1234567</p>
+                <div class="map-box">
+                    <img src="images/map.png" alt="Map of our office location">
                 </div>
             </section>
 
-            <section class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" style="width:100%; padding:8px; margin-bottom:15px;">
+            <section class="form-wrapper">
+                <h2>Message Us</h2>
+                <form action="#" method="post">
+                    <label for="user-name">Full Name</label>
+                    <input type="text" id="user-name" name="user-name" required>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" style="width:100%; padding:8px; margin-bottom:15px;">
+                    <label for="user-email">Email Address</label>
+                    <input type="email" id="user-email" name="user-email" required>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" style="width:100%; padding:8px;"></textarea>
+                    <fieldset>
+                        <legend>Purpose of Inquiry</legend>
+                        <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation</label>
+                        <label><input type="radio" name="purpose" value="feedback"> Feedback</label>
+                    </fieldset>
 
-                    <button type="submit" style="background:#004e92; color:white; border:none; padding:10px 20px; margin-top:15px; cursor:pointer;">Send Message</button>
+                    <label for="user-message">Your Message</label>
+                    <textarea id="user-message" name="user-message" rows="5" required></textarea>
+
+                    <label class="check-container">
+                        <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the newsletter
+                    </label>
+
+                    <button type="submit">Send Message</button>
                 </form>
             </section>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Rafting Project | Rich Kevin Panozo Vargas</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        </div>
+        <p>&copy; 2026 Whitewater Rafting | Rich Kevin Panozo Vargas</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
