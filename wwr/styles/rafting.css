@@ -1,101 +1,76 @@
 :root {
-    --primary-color: #004e92;
+    --primary-blue: #004e92;
     --dark-grey: #333333;
-    --light-bg: #fcfcfc;
+    --white: #ffffff;
 }
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: var(--light-bg);
+    line-height: 1.6;
+    color: var(--dark-grey);
 }
 
+/* Navigation Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 6%;
-    background: #fff;
-    border-bottom: 2px solid var(--primary-color);
+    padding: 1rem 5%;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--primary-blue);
 }
 
-header img { height: 60px; }
+header img {
+    height: 60px;
+}
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 600;
+    color: var(--primary-blue);
+    font-weight: bold;
 }
 
-/* Home Grid Section */
+/* Home Grid Layout */
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
-    padding: 50px 8%;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
 }
 
 .home-card {
-    background: #fff;
-    padding: 25px;
+    background: var(--white);
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .home-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-/* Trips Page Specifics */
-.trips-container {
-    padding: 40px 8%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.trips-container img {
-    width: 100%;
-    max-width: 850px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-    margin: 25px auto;
-}
-
-/* Contact and Map Styling */
-.map-box img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
     border-radius: 8px;
 }
 
-/* Footer and Social Icons */
+/* Trips Page Styling - Fixed Image Sizes */
+.trips-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trips-main img {
+    width: 100%;
+    max-width: 700px; /* This prevents giant images in trips */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Footer and Social Icons - Fixed Icon Sizes */
 footer {
-    background: var(--dark-grey);
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-    margin-top: 60px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.social-links img {
-    width: 32px;
-    height: 32px;
-}
+    background-color: var(--dark-grey
