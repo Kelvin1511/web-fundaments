@@ -1,47 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Rich Kevin Panozo Vargas</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home - Whitewater Rafting | Rich Kevin Panozo</title>
+    <meta name="description" content="The best whitewater rafting adventures in Bolivia and the world. Join us today!">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <h1>WDD130 Course Home Page</h1>
+        <img src="images/logo.png" alt="Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Main Hero Image" class="hero-img">
+            <article class="hero-msg">
+                <h1>Experience the Wild</h1>
+                <a href="trips.html" class="cta-btn">View Our Trips</a>
+            </article>
+        </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Activities</a>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-    </nav>
+        <section class="newsletter">
+            <h2>Join Our Adventure</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
 
-    <div class="grid">
-        <aside>
-            <h2>Student Profile</h2>
-            <img src="images/profile.jpg" alt="Rich Kevin Panozo Vargas">
-            <p><strong>Name:</strong> Rich Kevin Panozo Vargas</p>
-            <p><strong>Location:</strong> Cochabamba, Bolivia</p>
-            <p>Welcome to my profile! I am a web development student working on modern layouts.</p>
-        </aside>
-
-        <main>
-            <h2>Main Content</h2>
-            <p>
-                This page is styled using <strong>CSS Flexbox</strong> for the navigation bar 
-                and <strong>CSS Grid</strong> for the main layout structure.
-            </p>
-            <p>
-                The goal of this activity is to practice responsive design and 
-                cleaner CSS refactoring.
-            </p>
-        </main>
-    </div>
-
+        <section class="home-grid">
+            <div class="grid-box">
+                <img src="images/client.jpg" alt="Happy customers">
+                <h3>Our Mission</h3>
+                <p>Bringing nature closer to you through safe and exciting river runs.</p>
+            </div>
+            <div class="grid-box">
+                <img src="images/hero.jpg" alt="Rafting action">
+                <h3>Our Equipment</h3>
+                <p>We use the highest safety standards and top-tier gear in every trip.</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2026 | Rich Kevin Panozo Vargas | Cochabamba, Bolivia | WDD130</p>
+        <p>© 2026 Rafting Project | Rich Kevin Panozo Vargas | Bolivia</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </nav>
     </footer>
 </body>
 </html>
