@@ -1,105 +1,129 @@
 :root {
-    --primary-blue: #004e92;
+    --brand-blue: #004e92;
     --dark-grey: #333333;
+    --light-bg: #fcfcfc;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    line-height: 1.6;
+    color: var(--dark-grey);
 }
 
-/* Header & Navigation */
+/* Header & Navigation Fixes */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    border-bottom: 2px solid var(--primary-blue);
+    padding: 1rem 6%;
+    background: #ffffff;
+    border-bottom: 3px solid var(--brand-blue);
 }
 
-header img { height: 60px; }
+header img {
+    height: 60px;
+}
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: var(--primary-blue);
+    color: var(--brand-blue);
     font-weight: bold;
 }
 
-/* Hero Section (Home) - Para que se vea profesional */
-.hero-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* --- HERO SECTION (Fixes Home & other hero images) --- */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -10px; /* Adjust to pull hero up if needed */
 }
 
-.hero-image {
+#hero-img {
+    grid-column: 1/4;
     width: 100%;
-    height: 500px;
+    height: auto;
     object-fit: cover;
 }
 
-.hero-msg {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin-top: 100px; /* Adjust message position */
+    z-index: 1;
     color: white;
-    padding: 2rem;
+}
+
+/* --- TRIPS PAGE (Fixes the giant boat and structure) --- */
+.tripsmain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 6%;
+}
+
+.tripsmain h1 {
     text-align: center;
-    border-radius: 10px;
-    width: 50%;
 }
 
-.hero-msg a {
-    background: var(--primary-blue);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.tripsmain p {
+    text-align: center;
 }
 
-/* Grid for Cards (Home & About) */
-.grid-layout {
+/* Container for your trips */
+.trips-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 40px 8%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 30px;
 }
 
-.card-item {
-    background: white;
+.trip-card {
+    background: #ffffff;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.card-item img {
+/* This controls the specific trip images (trip1 to trip5) */
+.trip-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-/* Footer & Icons - FIXED SIZE */
+/* --- CONTACT US PAGE (Fixes the giant map) --- */
+/* (Keep your existing layout CSS if it works, just add this for the map) */
+.map-box img {
+    width: 100%;
+    max-width: 550px; /* Professional map size */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+/* --- FOOTER & ICON SIZE FIXES --- */
 footer {
     background: var(--dark-grey);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 40px 0;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-.social-media {
+.socialmedia {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     margin-top: 20px;
 }
 
-.social-media img {
-    width: 32px;  /* Tamaño bonito y profesional */
+/* This is the professional size for the audit and your design */
+.socialmedia img {
+    width: 32px;
     height: 32px;
 }
