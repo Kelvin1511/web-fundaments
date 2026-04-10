@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Whitewater Rafting Logo">
+        <img src="images/logo.png" alt="Rafting Logo">
         <nav>
             <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -19,37 +19,29 @@
 
     <main>
         <div class="contact-container">
-            <section class="office-info">
-                <h1>Our Location</h1>
+            <section class="contact-info">
+                <h1>Visit Our Office</h1>
                 <p><strong>Address:</strong> Av. Heroínas, Cochabamba, Bolivia</p>
-                <p><strong>Email:</strong> team@rafting.com</p>
+                <p><strong>Email:</strong> contact@raftingadventure.com</p>
                 <p><strong>Phone:</strong> +591 123 45678</p>
-                <div class="map-box">
-                    <img src="images/map.png" alt="Office Map">
+                <div class="map-container">
+                    <img src="images/map.png" alt="Our Location">
                 </div>
             </section>
 
-            <section class="form-container">
+            <section class="contact-form">
                 <h2>Send Us a Message</h2>
                 <form>
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" style="width:100%; padding:8px; margin-bottom:15px;">
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" style="width:100%; padding:8px; margin-bottom:15px;">
 
-                    <label>Purpose of Message</label>
-                    <div style="margin-top: 10px;">
-                        <input type="radio" id="general" name="purpose" value="general">
-                        <label style="display: inline; font-weight: normal;" for="general">General</label>
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label style="display: inline; font-weight: normal;" for="reservation">Reservation</label>
-                    </div>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" style="width:100%; padding:8px;"></textarea>
 
-                    <label for="msg">Message</label>
-                    <textarea id="msg" name="msg" rows="5"></textarea>
-
-                    <button type="submit">Send Message</button>
+                    <button type="submit" style="background:#004e92; color:white; border:none; padding:10px 20px; margin-top:15px; cursor:pointer;">Send Message</button>
                 </form>
             </section>
         </div>
@@ -58,15 +50,9 @@
     <footer>
         <p>&copy; 2026 Rafting Project | Rich Kevin Panozo Vargas</p>
         <div class="social-links">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn">
-            </a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
         </div>
     </footer>
 </body>
