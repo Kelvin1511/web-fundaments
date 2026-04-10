@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Company Logo">
+        <img src="images/logo.png" alt="Whitewater Rafting Logo">
         <nav>
             <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -18,34 +18,41 @@
     </header>
 
     <main>
-        <section class="contact-grid">
-            <div class="contact-info">
-                <h1>Visit Our Office</h1>
+        <div class="contact-container">
+            <section class="office-info">
+                <h1>Our Location</h1>
                 <p><strong>Address:</strong> Av. Heroínas, Cochabamba, Bolivia</p>
-                <p><strong>Email:</strong> info@raftingadventure.com</p>
-                <p><strong>Phone:</strong> +591 4 1234567</p>
-                
-                <div class="map-container">
-                    <img src="images/map.png" alt="Office Location Map">
+                <p><strong>Email:</strong> team@rafting.com</p>
+                <p><strong>Phone:</strong> +591 123 45678</p>
+                <div class="map-box">
+                    <img src="images/map.png" alt="Office Map">
                 </div>
-            </div>
+            </section>
 
-            <div class="contact-form-container">
+            <section class="form-container">
                 <h2>Send Us a Message</h2>
-                <form action="#">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                <form>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
 
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <label>Purpose of Message</label>
+                    <div style="margin-top: 10px;">
+                        <input type="radio" id="general" name="purpose" value="general">
+                        <label style="display: inline; font-weight: normal;" for="general">General</label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label style="display: inline; font-weight: normal;" for="reservation">Reservation</label>
+                    </div>
 
-                    <button type="submit" class="btn-submit">Send Message</button>
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="msg" rows="5"></textarea>
+
+                    <button type="submit">Send Message</button>
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
