@@ -1,13 +1,18 @@
 :root {
-    --primary-blue: #004e92;
-    --dark-grey: #333333;
+    --primary-color: #004e92;
+    --secondary-color: #333333;
     --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -15,96 +20,61 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    border-bottom: 2px solid var(--primary-blue);
+    border-bottom: 2px solid var(--primary-color);
 }
 
-header img { height: 60px; }
+header img {
+    height: 60px;
+}
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: var(--primary-blue);
+    color: var(--primary-color);
     font-weight: bold;
 }
 
-/* Home Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.hero-msg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.6);
-    color: var(--white);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-/* Grids for Home & Trips */
-.main-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 40px 8%;
+main {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Control de fotos de viajes y home */
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Contact Page Map Fix */
-.map-box {
-    text-align: center;
     padding: 20px;
 }
 
-.map-box img {
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.map-container {
+    text-align: center;
     width: 100%;
-    max-width: 700px;
+}
+
+.map-container img {
+    width: 100%;
+    max-width: 600px;
     height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Footer & Icons Fix */
 footer {
-    background: var(--dark-grey);
+    background: var(--secondary-color);
     color: var(--white);
     text-align: center;
     padding: 40px 0;
+    margin-top: 40px;
 }
 
-.social-links {
+footer nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-.social-links img {
+footer nav img {
     width: 32px;
     height: 32px;
 }
