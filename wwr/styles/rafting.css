@@ -2,6 +2,7 @@
     --primary-color: #004e92;
     --secondary-color: #333333;
     --white: #ffffff;
+    --light-bg: #fcfcfc;
 }
 
 * {
@@ -13,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--secondary-color);
 }
 
 header {
@@ -20,6 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
+    background-color: var(--white);
     border-bottom: 2px solid var(--primary-color);
 }
 
@@ -41,18 +45,24 @@ main {
     padding: 20px;
 }
 
-.map-box {
-    text-align: center;
-    margin-top: 30px;
+/* Specific styling for large content images (Home, Trips) */
+.content-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.map-box img {
+/* Specific styling for the Map image in Contact Us */
+.map-image {
     width: 100%;
     max-width: 600px;
     height: auto;
-    border-radius: 10px;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
